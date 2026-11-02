@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #eaf4ef;
+    color: #263d32;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    border-top: 6px solid #23845b;
+    box-shadow: 0 8px 25px rgba(30, 80, 55, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #17613f;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+p {
+    text-align: center;
+    color: #718078;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #315c46;
+    margin-bottom: 9px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 20px;
+    border: 1px solid #cbded2;
+    border-radius: 5px;
+    background: #f8fcf9;
+    font-size: 15px;
+    color: #263d32;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #23845b;
+    box-shadow: 0 0 0 3px rgba(35, 132, 91, 0.12);
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 5px 0 22px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 400;
+    margin: 0;
+}
+
+input[type="radio"] {
+    accent-color: #23845b;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #23845b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #155b3c;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .radio-group {
+        gap: 15px;
+    }
+}

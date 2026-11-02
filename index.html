@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Student Registration Form</h1>
+    <p>Welcome to the Online Student Registration Portal</p>
+
+    <form id="registrationForm" action="process.php" method="POST">
+
+        <label>Full Name:</label>
+        <input type="text" name="fullname"
+               placeholder="Enter your full name" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone"
+               placeholder="Enter your phone number"
+               pattern="[0-9]{10}" maxlength="10" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender"
+                   value="Female" required> Female</label>
+
+            <label><input type="radio" name="gender"
+                   value="Male"> Male</label>
+
+            <label><input type="radio" name="gender"
+                   value="Other"> Other</label>
+        </div>
+
+        <label>Course:</label>
+        <select name="course" required>
+            <option value="">Select your course</option>
+            <option value="Bachelor of Engineering">Bachelor of Engineering</option>
+            <option value="Bachelor of Science">Bachelor of Science</option>
+            <option value="Bachelor of Commerce">Bachelor of Commerce</option>
+            <option value="Bachelor of Arts">Bachelor of Arts</option>
+        </select>
+
+        <label>Address:</label>
+        <textarea name="address" rows="4"
+                  placeholder="Enter your address" required></textarea>
+
+        <button type="submit">Submit Registration</button>
+
+    </form>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
